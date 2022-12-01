@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopping</title>
+    <!-- Icon for tab -->
+    <link rel="icon" href="grocery Image.png">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- CSS custom file -->
+    <link rel="stylesheet" href="cssFile.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- JS custom file -->
+    <script type="module" src="javaS.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="image"><i class="fas fa-shopping-basket"></i> Grocery </a>
+
+        <!-- Navigation Bar -->
+        <nav class="navgiation">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <!-- <a href="#review">Review</a> -->
+        </nav>
+        <!-- Side Icons -->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-icon"></div>
+            <div class="fas fa-search" id="search-icon"></div>
+            <div class="fas fa-shopping-cart" id="cart-icon"></div>
+            <div class="fas fa-user" id="user-icon"></div>
+        </div>
+        <!-- For Search Icon  -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!-- For Selecting Items to Cart -->
+        <div class="shopping-cart">
+            <h2 class="cart-title">Cart</h2>
+            <!--Cart Items -->
+            <div class="cart-content">
+
+            </div>
+            <!-- Total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn">Buy Now</button>
+            <!-- Cart closing -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+
+        <!-- login Page -->
+        <form action="" class="login-form">
+            <h3>Login Form</h3>
+            <input type="text" placeholder="Enter your username" class="box"><br>
+            <input type="password" placeholder="Type password" class="box"><br>
+            <input type="submit" value="login" class="btn" id="login-btn"><br>
+            <p>Don't have an Account?<a href="#register-form" id="registration">Create One</a></p>
+            <p>Forgot Password?<a href="#password-change" id="pswrdChange">Click Here</a></p>
+        </form>
+        <!-- Register Page -->
+        <form action="" class="register-form">
+            <h3>Registration</h3>
+            <input type="text" placeholder="Enter your Name" class="box"><br>
+            <input type="email" placeholder="Enter your Email" class="box"><br>
+            <input type="password" placeholder="Type password" class="box"><br>
+            <input type="submit" value="register" class="btn"><br>
+            <p>Already Registered?<a href="#login-form" id="registered">Login</a></p>
+        </form>
+        <!-- Forgot Password -->
+        <form action="" class="password-change">
+            <h3>Password Reset</h3>
+            <input type="email" placeholder="Enter your Email" class="box"><br>
+            <input type="password" placeholder="Enter New password" class="box"><br>
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </header>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Shopping Point for your <span>Home....</span></h3>
+            <p>This is where you can buy all your Home essentials and you can book online for quick delivery to your
+                doorstep!!</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <!-- Fresh & Organic -->
+            <div class="box">
+                <img src="Images/features/organic.png" alt="" width="225px" height="225px">
+                <h3>Fresh and Organic</h3>
+                <p>We have all kinds of Fruits and Vegetables for you. We grow them on our own and they are organic.</p>
+                <a href="#" class="btn">read More</a>
+            </div>
+            <!--Free Delivery -->
+            <div class="box">
+                <img src="Images/features/delivery.png" alt="" width="225px" height="225px">
+                <h3>Free Delivery</h3>
+                <p>We also delivery your grocery Items to your doorstep within one hour after your booking.</p>
+                <a href="#" class="btn">read More</a>
+            </div>
+            <!-- Online Payment -->
+            <div class="box">
+                <img src="Images/features/payment.png" alt="" width="225px" height="225px">
+                <h3>Online Payment</h3>
+                <p>You can also pay your bill from your room. Just by one click you can pay your bill online.</p>
+                <a href="#" class="btn">read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+        <!-- Fruits Section -->
+        <div class=" product-content">
+            <div class=" product-box">
+                <img src="Images/Fruits/bananas.png" alt="" class="product-img">
+                <h3 class="product-title">Bananas</h3>
+                <div class="price">₹30</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Fruits/grapes.png" alt="" width="200px" height="300px" class="product-img">
+                <h3 class="product-title">Grapes</h3>
+                <div class="price">₹60</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Fruits/guava.png" alt="" class="product-img">
+                <h3 class="product-title">Guava</h3>
+                <div class="price">₹50</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Fruits/mango.png" alt="" class="product-img">
+                <h3 class="product-title">Mangoes</h3>
+                <div class="price">₹250</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <!-- Vegetables Section -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="Images/vegetables/carrot.png" alt="" class="product-img">
+                <h3 class="product-title">Carrots</h3>
+                <div class="price">₹45</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/vegetables/ladyfinger.png" alt="" class="product-img">
+                <h3 class="product-title">LadyFingers</h3>
+                <div class="price">₹30</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/vegetables/onion.png" alt="" class="product-img">
+                <h3 class="product-title">Onions</h3>
+                <div class="price">₹30</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/vegetables/potato.png" alt="" class="product-img">
+                <h3 class="product-title">Potatoes</h3>
+                <div class="price">₹25</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <!-- Grocery List -->
+        <div class="swiper product-content">
+            <div class="product-box">
+                <img src="Images/Grocery stuff/bread.png" alt="" class="product-img">
+                <h3 class="product-title">Bread</h3>
+                <div class="price">₹35</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Grocery stuff/cheese.png" alt="" class="product-img" width="200px" height="183px">
+                <h3 class="product-title">Cheese</h3>
+                <div class="price">₹150</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Grocery stuff/milk.png" alt="" class="product-img">
+                <h3 class="product-title">Milk</h3>
+                <div class="price">₹25</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="Images/Grocery stuff/oil.png" alt="" class="product-img">
+                <h3 class="product-title">Oil</h3>
+                <div class="price">₹170</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button type="button" class="btn add-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Fresh vegetables</h3>
+                <p>upto 45% off</p>
+                <a href="#products" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <h3>Fresh Fruits</h3>
+                <p>upto 45% off</p>
+                <a href="#products" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <h3>Dairy Products</h3>
+                <p>upto 45% off</p>
+                <a href="#products" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <h3>Grocery</h3>
+                <p>upto 45% off</p>
+                <a href="#products" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section (Contact Section) -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Grocery <i class="fas fa-shopping-basket"></i></h3>
+                <p>get connected with us on social networks</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="tel:+91-9846283659" class="links"><i class="fas fa-phone"></i> +91-9846283659</a>
+                <a href="tel:0884-2435457" class="links"><i class="fas fa-phone"></i> 0884-2435457</a>
+                <a href="mailto:satya123@gmail.com" class="links"><i class="fa-solid fa-envelope"></i>
+                    satya123@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> hyderbad, india - 522001</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home" class="links"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#features" class="links"><i class="fas fa-arrow-right"></i> features</a>
+                <a href="#products" class="links"><i class="fas fa-arrow-right"></i> products</a>
+                <a href="#categories" class="links"><i class="fas fa-arrow-right"></i> categories</a>
+            </div>
+
+            <div class="box">
+                <h3>NewsLetter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+       </div>
+       <div class="credit">created by <span> ms. satya pavani </span> | all rights reserved</div>
+    </section>
+</body>
+</html>
